@@ -614,21 +614,21 @@
       <p class="booking-sub">Choose your plan, fill in your details, and pay securely to lock in your slot. We'll reach out on WhatsApp within 24 hours.</p>
 
       <div class="plan-grid">
-        <div class="plan-card active" onclick="selectPlan(this)">
+        <a href="PASTE_LINK_1_HERE" target="_blank" class="plan-card active">
           <div class="plan-badge">Weight Management Consultation</div>
           <div class="plan-price">&#8377;49</div>
           <p class="plan-desc">
             Focused on weight loss &amp; weight gain. Get a personalized Expert Doctor-guided plan with diet, exercise, and lifestyle changes to reach your ideal weight — naturally and sustainably.
           </p>
-        </div>
-        <div class="plan-card" onclick="selectPlan(this)">
+        </a>
+        <a href="PASTE_LINK_2_HERE" target="_blank" class="plan-card">
           <div class="plan-badge">Health Consultation</div>
           <div class="plan-price">&#8377;149</div>
           <p class="plan-desc">
             For any health problem beyond weight — diabetes, BP, joint pain, skin, hormones &amp; more. Share your existing reports and get a thorough clinical review with a personalized recovery plan.
           </p>
           <div class="plan-doctor">&#128138; 1-on-1 session with Dr. Akshar Vaghasiya (MBBS)<br>6 years of coaching experience</div>
-        </div>
+        </a>
       </div>
       <p class="secure-note">&#128274; Secure payment &middot; UPI, Cards &amp; Net Banking accepted</p>
     </div>
@@ -686,10 +686,7 @@
   </style>
 
   <script>
-    function selectPlan(el) {
-      document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('active'));
-      el.classList.add('active');
-    }
+    
 
     function handleBooking() {
       var name = document.getElementById('fname').value.trim();
